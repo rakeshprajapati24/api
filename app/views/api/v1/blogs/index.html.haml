@@ -1,0 +1,12 @@
+%h1 Show articles details
+%table
+  %thead
+    %tr
+      %th Title
+      %th Details
+      %th Action
+  %tbody
+    - @blogs.each do |blog|
+      %tr
+        %td= blog.name
+        %td= blog.detail
